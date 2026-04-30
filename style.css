@@ -1,0 +1,32 @@
+.corpo {
+    background-color: rgb(6, 44, 6);
+}
+
+/* Botão oval */
+.botaomic {
+    width: 200px; /* largura */
+    height: 300px; /* altura maior = formato oval vertical */
+
+    background-color: #1e6620;
+    border: 3px solid black;
+    border-radius: 50%; /* cria o formato oval */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden; /* impede a imagem de sair */
+}
+
+/* Imagem dentro do botão */
+.botaomic img {
+    width: 60%; /* tamanho da imagem */
+    height: auto;
+}
+
+/* Hover */
+.botaomic:hover {
+    background-color: #ffffff;
+}
