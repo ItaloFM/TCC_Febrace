@@ -1,37 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cérebro Falante</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Seu CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="corpo">
 
-    <!--Nav Bar-->
-    <nav class="navbar" style="background-color: #f8f9fa;" data-bs-theme="light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="imgs/iconMic.png" alt="Logo" width="30" height="24">
-                TCC Febrace
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+
+                <!-- LOGO -->
+                <img 
+                    src="imgs/cerebrofalante.png" 
+                    alt="Logo Cérebro Falante"
+                    width="55"
+                    class="logoNav"
+                >
+
+                <!-- TEXTO -->
+                <span class="tituloNav">
+                    Cérebro Falante
+                </span>
+
             </a>
+
         </div>
     </nav>
 
-    <!-- Botão de Mic (oval com imagem) -->
-    <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
-        <button class="botaomic">
-            <img src="imgs/iconMicBranco.png" alt="Microfone">
-        </button>
-    </div>
+    <!-- CONTEÚDO -->
+    <main class="container-fluid vh-100 d-flex justify-content-center align-items-center">
 
-    <!-- Bootstrap JS -->
+        <div class="cardPrincipal text-center p-4">
+
+            <h1 class="titulo mb-3">
+                Exercício de Fala
+            </h1>
+
+            <p class="subtitulo mb-4">
+                Pressione o microfone e leia a frase em voz alta
+            </p>
+
+            <!-- FRASE -->
+            <div class="fraseBox mb-4">
+                <p id="frase">
+                    Clique no microfone para começar
+                </p>
+            </div>
+
+            <!-- BOTÃO MICROFONE -->
+            <button class="botaomic" id="botaoMic">
+                <img src="imgs/iconMicBranco.png" alt="Microfone">
+            </button>
+
+            <!-- NÍVEL -->
+            <div class="nivel mt-4">
+                <span id="nivelTexto">Nível: Fácil</span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
